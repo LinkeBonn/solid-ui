@@ -1,4 +1,4 @@
 import SDButton from "./components/SDButton.vue";
-import "./style.css";
+import "./solid-ui.css";
 
 export {SDButton}

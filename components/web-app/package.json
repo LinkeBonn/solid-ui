@@ -5,20 +5,13 @@
     "url": "git+https://github.com/LinkeBonn/solid-ui.git"
   },
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.6",
   "type": "module",
   "files": [
     "dist"
   ],
   "main": "./dist/solid-ui.umd.cjs",
   "module": "./dist/solid-ui.js",
-  "exports": {
-    ".": {
-      "import": "./dist/solid-ui.js",
-      "require": "./dist/solid-ui.umd.cjs"
-    },
-    "./style.css": "./dist/style.css"
-  },
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
