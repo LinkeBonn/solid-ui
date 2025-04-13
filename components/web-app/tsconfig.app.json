@@ -1,0 +1,20 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "noEmit": false,
+    "composite": true
+  },
+  "include": [
+    "components/web-app/src/**/*.ts",
+    "components/web-app/src/**/*.tsx",
+    "components/web-app/src/**/*.vue"
+  ]
+}

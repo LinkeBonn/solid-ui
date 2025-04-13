@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "exclude": [
+    "components/web-app/src/story/**"
+  ],
+  "references": [
+    { "path": "./tsconfig.app.json"},
+    { "path": "./tsconfig.node.json"}
+  ],
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+  }
+}

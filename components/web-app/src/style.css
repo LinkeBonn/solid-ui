@@ -1,0 +1,293 @@
+
+html * {
+  font-family: Roboto, sans-serif !important;
+}
+
+:root{
+
+  /* colors */
+  --linke-red-50: rgb(255, 238, 238);
+  --linke-red-100: rgb(255, 217, 217);
+  --linke-red-200: rgb(255, 184, 184);
+  --linke-red-300: rgb(255, 135, 135);
+  --linke-red-400: rgb(255, 67, 67);
+  --linke-red-500: rgb(255, 0, 0);
+  --linke-red-600: rgb(224, 0, 0);
+  --linke-red-700: rgb(189, 0, 0);
+  --linke-red-800: rgb(156, 3, 3);
+  --linke-red-900: rgb(128, 9, 9);
+  --linke-red-950: rgb(70, 0, 0);
+
+  --dark-red-50: rgb(254, 231, 245);
+  --dark-red-100: rgb(254, 211, 238);
+  --dark-red-200: rgb(255, 169, 222);
+  --dark-red-300: rgb(255, 97, 193);
+  --dark-red-400: rgb(255, 0, 147);
+  --dark-red-500: rgb(111, 0, 60);
+  --dark-red-600: rgb(87, 6, 46);
+  --dark-red-700: rgb(75, 2, 35);
+  --dark-red-800: rgb(62, 3, 30);
+  --dark-red-900: rgb(52, 4, 25);
+  --dark-red-950: rgb(41, 0, 18);
+
+  --dark-green-50: rgb(219, 254, 255);
+  --dark-green-100: rgb(168, 254, 255);
+  --dark-green-200: rgb(90, 247, 255);
+  --dark-green-300: rgb(0, 217, 233);
+  --dark-green-400: rgb(0, 101, 114);
+  --dark-green-500: rgb(0, 75, 91);
+  --dark-green-600: rgb(0, 60, 77);
+  --dark-green-700: rgb(0, 47, 61);
+  --dark-green-800: rgb(3, 37, 49);
+  --dark-green-900: rgb(5, 31, 42);
+  --dark-green-950: rgb(0, 24, 35);
+
+  --cyan-50: rgb(237, 254, 251);
+  --cyan-100: rgb(191, 255, 242);
+  --cyan-200: rgb(127, 255, 229);
+  --cyan-300: rgb(54, 250, 218);
+  --cyan-400: rgb(20, 210, 185);
+  --cyan-500: rgb(0, 177, 156);
+  --cyan-600: rgb(0, 157, 142);
+  --cyan-700: rgb(2, 113, 103);
+  --cyan-800: rgb(7, 90, 84);
+  --cyan-900: rgb(10, 74, 69);
+  --cyan-950: rgb(0, 45, 43);
+
+  --violet-50: rgb(250, 236, 255);
+  --violet-100: rgb(247, 215, 255);
+  --violet-200: rgb(237, 173, 255);
+  --violet-300: rgb(230, 109, 255);
+  --violet-400: rgb(217, 23, 255);
+  --violet-500: rgb(129, 0, 161);
+  --violet-600: rgb(103, 1, 138);
+  --violet-700: rgb(88, 0, 115);
+  --violet-800: rgb(70, 0, 90);
+  --violet-900: rgb(62, 4, 76);
+  --violet-950: rgb(41, 0, 52);
+
+  --rose-50: rgb(253, 246, 253);
+  --rose-100: rgb(250, 236, 251);
+  --rose-200: rgb(243, 216, 246);
+  --rose-300: rgb(236, 185, 238);
+  --rose-400: rgb(225, 142, 228);
+  --rose-500: rgb(214, 117, 216);
+  --rose-600: rgb(182, 67, 182);
+  --rose-700: rgb(150, 53, 147);
+  --rose-800: rgb(123, 45, 120);
+  --rose-900: rgb(102, 41, 99);
+  --rose-950: rgb(66, 16, 64);
+
+  --blue-50: rgb(239, 242, 252);
+  --blue-100: rgb(217, 225, 248);
+  --blue-200: rgb(190, 205, 242);
+  --blue-300: rgb(145, 172, 233);
+  --blue-400: rgb(91, 129, 221);
+  --blue-500: rgb(46, 79, 196);
+  --blue-600: rgb(48, 66, 167);
+  --blue-700: rgb(48, 58, 144);
+  --blue-800: rgb(45, 50, 118);
+  --blue-900: rgb(40, 45, 94);
+  --blue-950: rgb(28, 30, 57);
+
+  --light-blue-50: rgb(248, 249, 255);
+  --light-blue-100: rgb(241, 242, 255);
+  --light-blue-200: rgb(227, 231, 255);
+  --light-blue-300: rgb(207, 212, 255);
+  --light-blue-400: rgb(179, 183, 255);
+  --light-blue-500: rgb(212, 212, 255);
+  --light-blue-600: rgb(161, 156, 251);
+  --light-blue-700: rgb(126, 116, 239);
+  --light-blue-800: rgb(78, 65, 232);
+  --light-blue-900: rgb(44, 29, 217);
+  --light-blue-950: rgb(19, 15, 146);
+
+  --primary-red-full: var(--linke-red-500);
+  --primary-red-default: var(--linke-red-200);
+  --primary-red-interaction: var(--linke-red-300);
+  --primary-red-active: var(--linke-red-400);
+  --primary-red-inactive: var(--linke-red-100);
+  --primary-red-text: var(--linke-red-950);
+  --primary-red-text-inactive: var(--linke-red-400);
+
+  --secondary-red-full: var(--dark-red-500);
+  --secondary-red-default: var(--dark-red-200);
+  --secondary-red-interaction: var(--dark-red-300);
+  --secondary-red-active: var(--dark-red-400);
+  --secondary-red-inactive: var(--dark-red-100);
+  --secondary-red-text: var(--dark-red-950);
+  --secondary-red-text-inactive: var(--dark-red-400);
+
+  --primary-green-full: var(--dark-green-500);
+  --primary-green-default: var(--dark-green-200);
+  --primary-green-interaction: var(--dark-green-300);
+  --primary-green-active: var(--dark-green-400);
+  --primary-green-inactive: var(--dark-green-100);
+  --primary-green-text: var(--dark-green-950);
+  --primary-green-text-inactive: var(--dark-green-400);
+
+  --secondary-green-full: var(--cyan-500);
+  --secondary-green-default: var(--cyan-200);
+  --secondary-green-interaction: var(--cyan-300);
+  --secondary-green-active: var(--cyan-400);
+  --secondary-green-inactive: var(--cyan-100);
+  --secondary-green-text: var(--cyan-950);
+  --secondary-green-text-inactive: var(--cyan-400);
+
+  --primary-violet-full: var(--violet-500);
+  --primary-violet-default: var(--violet-200);
+  --primary-violet-interaction: var(--violet-300);
+  --primary-violet-active: var(--violet-400);
+  --primary-violet-inactive: var(--violet-100);
+  --primary-violet-text: var(--violet-950);
+  --primary-violet-text-inactive: var(--violet-400);
+
+  --secondary-violet-full: var(--rose-500);
+  --secondary-violet-default: var(--rose-200);
+  --secondary-violet-interaction: var(--rose-300);
+  --secondary-violet-active: var(--rose-400);
+  --secondary-violet-inactive: var(--rose-100);
+  --secondary-violet-text: var(--rose-950);
+  --secondary-violet-text-inactive: var(--rose-400);
+
+  --primary-blue-full: var(--blue-500);
+  --primary-blue-default: var(--blue-200);
+  --primary-blue-interaction: var(--blue-300);
+  --primary-blue-active: var(--blue-400);
+  --primary-blue-inactive: var(--blue-100);
+  --primary-blue-text: var(--blue-950);
+  --primary-blue-text-inactive: var(--blue-400);
+
+  --secondary-blue-full: var(--light-blue-500);
+  --secondary-blue-default: var(--light-blue-200);
+  --secondary-blue-interaction: var(--light-blue-300);
+  --secondary-blue-active: var(--light-blue-400);
+  --secondary-blue-inactive: var(--light-blue-100);
+  --secondary-blue-text: var(--light-blue-950);
+  --secondary-blue-text-inactive: var(--light-blue-400);
+
+  /* simple element color classes*/
+  /* === PRIMARY COLORS === */
+  .primary-red {
+    background-color: var(--primary-red-default);
+    color: var(--primary-red-text);
+  }
+  .primary-red:hover {
+    background-color: var(--primary-red-interaction);
+  }
+  .primary-red:active {
+    background-color: var(--primary-red-active);
+  }
+  .primary-red--disabled {
+    background-color: var(--primary-red-inactive);
+    color: var(--primary-red-text-inactive);
+  }
+
+  .primary-green {
+    background-color: var(--primary-green-default);
+    color: var(--primary-green-text);
+  }
+  .primary-green:hover {
+    background-color: var(--primary-green-interaction);
+  }
+  .primary-green:active {
+    background-color: var(--primary-green-active);
+  }
+  .primary-green--disabled {
+    background-color: var(--primary-green-inactive);
+    color: var(--primary-green-text-inactive);
+  }
+
+  .primary-violet {
+    background-color: var(--primary-violet-default);
+    color: var(--primary-violet-text);
+  }
+  .primary-violet:hover {
+    background-color: var(--primary-violet-interaction);
+  }
+  .primary-violet:active {
+    background-color: var(--primary-violet-active);
+  }
+  .primary-violet--disabled {
+    background-color: var(--primary-violet-inactive);
+    color: var(--primary-violet-text-inactive);
+  }
+
+  .primary-blue {
+    background-color: var(--primary-blue-default);
+    color: var(--primary-blue-text);
+  }
+  .primary-blue:hover {
+    background-color: var(--primary-blue-interaction);
+  }
+  .primary-blue:active {
+    background-color: var(--primary-blue-active);
+  }
+  .primary-blue--disabled {
+    background-color: var(--primary-blue-inactive);
+    color: var(--primary-blue-text-inactive);
+  }
+
+  /* === SECONDARY COLORS === */
+  .secondary-red {
+    background-color: var(--secondary-red-default);
+    color: var(--secondary-red-text);
+  }
+  .secondary-red:hover {
+    background-color: var(--secondary-red-interaction);
+  }
+  .secondary-red:active {
+    background-color: var(--secondary-red-active);
+  }
+  .secondary-red--disabled {
+    background-color: var(--secondary-red-inactive);
+    color: var(--secondary-red-text-inactive);
+  }
+
+  .secondary-green {
+    background-color: var(--secondary-green-default);
+    color: var(--secondary-green-text);
+  }
+  .secondary-green:hover {
+    background-color: var(--secondary-green-interaction);
+  }
+  .secondary-green:active {
+    background-color: var(--secondary-green-active);
+  }
+  .secondary-green--disabled {
+    background-color: var(--secondary-green-inactive);
+    color: var(--secondary-green-text-inactive);
+  }
+
+  .secondary-violet {
+    background-color: var(--secondary-violet-default);
+    color: var(--secondary-violet-text);
+  }
+  .secondary-violet:hover {
+    background-color: var(--secondary-violet-interaction);
+  }
+  .secondary-violet:active {
+    background-color: var(--secondary-violet-active);
+  }
+  .secondary-violet--disabled {
+    background-color: var(--secondary-violet-inactive);
+    color: var(--secondary-violet-text-inactive);
+  }
+
+  .secondary-blue {
+    background-color: var(--secondary-blue-default);
+    color: var(--secondary-blue-text);
+  }
+  .secondary-blue:hover {
+    background-color: var(--secondary-blue-interaction);
+  }
+  .secondary-blue:active {
+    background-color: var(--secondary-blue-active);
+  }
+  .secondary-blue--disabled {
+    background-color: var(--secondary-blue-inactive);
+    color: var(--secondary-blue-text-inactive);
+  }
+
+}
+
