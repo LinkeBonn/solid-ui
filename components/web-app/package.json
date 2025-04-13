@@ -17,7 +17,10 @@
       "import": "./dist/solid-ui.js",
       "require": "./dist/solid-ui.umd.cjs"
     },
-    "./style.css": "./dist/style.css"
+    "./src/*.css": {
+      "import": "./dist/*.css",
+      "require": "./dist/*.css"
+    }
   },
   "types": "./dist/index.d.ts",
   "scripts": {

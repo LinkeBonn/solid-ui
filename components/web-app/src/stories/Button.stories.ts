@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
 
 import SDButton from '../components/SDButton.vue';
-import '../style.css';
+import '../solid-ui.css';
 
 const meta = {
   title: 'Controls/SDButton',
