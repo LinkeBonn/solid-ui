@@ -1,10 +1,10 @@
 {
-  "name": "solid-ui",
+  "name": "@linkebonn/solid-ui",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LinkeBonn/solid-ui.git"
+    "url": "git+https://github.com/LinkeBonn/solid-ui.git"
   },
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "type": "module",
   "files": [
@@ -21,11 +21,11 @@
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "dev": "./node_modules/.bin/vite",
-    "build": "./node_modules/.bin/vite build && vue-tsc --emitDeclarationOnly",
-    "preview": "./node_modules/.bin/vite preview",
-    "storybook": "./node_modules/.bin/storybook dev -p 6006 --ci",
-    "build-storybook": "./node_modules/.bin/storybook build"
+    "dev": "vite",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006 --ci",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "vue": "^3.5.13"

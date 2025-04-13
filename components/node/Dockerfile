@@ -1,15 +1,15 @@
 # Use the standard node LTS image
 FROM node:23.11.0 AS base
-RUN mkdir -p /tmp/.cache/yarn
-RUN chown -R node:node /tmp/.cache/yarn
+RUN mkdir -p /tmp/.cache/npm
+RUN chown -R node:node /tmp/.cache/npm
 
 # enable corepack
 ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 RUN corepack enable
 
-# Install Yarn v3
-RUN corepack prepare yarn@stable --activate
-RUN yarn set version 3.x
+# Install npm v3
+RUN corepack prepare npm@latest
+RUN npm set version 3.x
 
 # Continue with the development stage
 FROM base AS dev

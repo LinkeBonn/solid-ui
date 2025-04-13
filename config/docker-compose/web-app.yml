@@ -10,11 +10,10 @@ services:
     environment:
       - HOME=/tmp
     ports:
-      - "24678:24678"
       - "${PORT_WEB_APP}:6006"
     volumes:
       - ${PROJECT_ROOT}/components/web-app:/web-app:cached
       - ${PROJECT_ROOT}/artifacts:/artifacts
-    command: yarn storybook
+    command: npm run storybook
     tmpfs:
       - /tmp:exec
