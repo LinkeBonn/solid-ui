@@ -14,8 +14,8 @@ WEB-APP-NODE-RUN := WEB-APP-COMPOSE-RUN + ' --no-deps web-app'
 help:
 	@just --list
 
-yarn *args='-h':
-	{{WEB-APP-NODE-RUN}} yarn {{args}}
+npm *args='-h':
+	{{WEB-APP-NODE-RUN}} npm {{args}}
 
 npx *args='-h':
 	{{WEB-APP-NODE-RUN}} npx {{args}}
@@ -25,14 +25,14 @@ enter:
 
 install:
 	@just build-docker-images
-	{{WEB-APP-NODE-RUN}} yarn install --inline-builds
+	{{WEB-APP-NODE-RUN}} npm install --inline-builds
 	@echo "\n Install finished 🎉"
 
 build:
-    {{WEB-APP-NODE-RUN}} yarn build
+    {{WEB-APP-NODE-RUN}} npm build
 
 typecheck:
-    {{WEB-APP-NODE-RUN}} yarn typecheck
+    {{WEB-APP-NODE-RUN}} npm typecheck
 
 start: stop
 	{{WEB-APP-COMPOSE}} up -d
@@ -54,7 +54,7 @@ status:
 build-docker-images:
 	{{WEB-APP-COMPOSE}} build --pull --parallel
 
-build-web-app: (yarn "build")
+build-web-app: (npm "build")
 
 pre-commit: format-fix lint-fix
 
@@ -63,13 +63,13 @@ pre-commit: format-fix lint-fix
 ################################################
 
 format-fix:
-	just yarn format:fix
+	just npm format:fix
 
 lint-fix:
-	just yarn lint:fix
+	just npm lint:fix
 
 format-check:
-	just yarn format
+	just npm format
 
 lint-check:
-	just yarn lint
+	just npm lint
