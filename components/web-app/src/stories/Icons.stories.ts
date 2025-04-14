@@ -1,6 +1,7 @@
 import { defineComponent, h } from 'vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { Meta } from '@storybook/vue3';
+import '../solid-ui.css';
 
 export default {
     title: 'Design System/Icons',

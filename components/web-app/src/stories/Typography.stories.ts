@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
+import '../solid-ui.css';
 
 const meta: Meta = {
     title: 'Design System/Typography',
