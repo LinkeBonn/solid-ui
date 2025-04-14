@@ -1,9 +1,123 @@
+/* === Inter === */
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* === Work Sans === */
+@font-face {
+  font-family: 'Work Sans';
+  src: url('./assets/fonts/WorkSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('./assets/fonts/WorkSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('./assets/fonts/WorkSans-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 html * {
-  font-family: Roboto, sans-serif !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 5em;
+  line-height: 1.05;
+  overflow-wrap: break-word;
+}
+h2{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 4em;
+  line-height: 1.05;
+  overflow-wrap: break-word;
+}
+h3{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.33em;
+  line-height: 1.1;
+  overflow-wrap: break-word;
+}
+h4{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.66em;
+  line-height: 1.1;
+  overflow-wrap: break-word;
 }
 
 :root{
+
+  /* heading */
+  .heading-font-black {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .heading-font-light {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .heading-font-regular {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
   /* colors */
   --linke-red-50: rgb(255, 238, 238);
@@ -178,10 +292,6 @@ html * {
   .primary-red:active {
     background-color: var(--primary-red-active);
   }
-  .primary-red--disabled {
-    background-color: var(--primary-red-inactive);
-    color: var(--primary-red-text-inactive);
-  }
 
   .primary-green {
     background-color: var(--primary-green-default);
@@ -208,10 +318,6 @@ html * {
   .primary-violet:active {
     background-color: var(--primary-violet-active);
   }
-  .primary-violet--disabled {
-    background-color: var(--primary-violet-inactive);
-    color: var(--primary-violet-text-inactive);
-  }
 
   .primary-blue {
     background-color: var(--primary-blue-default);
@@ -222,10 +328,6 @@ html * {
   }
   .primary-blue:active {
     background-color: var(--primary-blue-active);
-  }
-  .primary-blue--disabled {
-    background-color: var(--primary-blue-inactive);
-    color: var(--primary-blue-text-inactive);
   }
 
   /* === SECONDARY COLORS === */
@@ -239,10 +341,6 @@ html * {
   .secondary-red:active {
     background-color: var(--secondary-red-active);
   }
-  .secondary-red--disabled {
-    background-color: var(--secondary-red-inactive);
-    color: var(--secondary-red-text-inactive);
-  }
 
   .secondary-green {
     background-color: var(--secondary-green-default);
@@ -253,10 +351,6 @@ html * {
   }
   .secondary-green:active {
     background-color: var(--secondary-green-active);
-  }
-  .secondary-green--disabled {
-    background-color: var(--secondary-green-inactive);
-    color: var(--secondary-green-text-inactive);
   }
 
   .secondary-violet {
@@ -269,10 +363,6 @@ html * {
   .secondary-violet:active {
     background-color: var(--secondary-violet-active);
   }
-  .secondary-violet--disabled {
-    background-color: var(--secondary-violet-inactive);
-    color: var(--secondary-violet-text-inactive);
-  }
 
   .secondary-blue {
     background-color: var(--secondary-blue-default);
@@ -284,10 +374,109 @@ html * {
   .secondary-blue:active {
     background-color: var(--secondary-blue-active);
   }
+
+  .primary-red--disabled {
+    background-color: var(--primary-red-inactive);
+    color: var(--primary-red-text-inactive);
+    pointer-events: none;
+    user-select: none;
+    cursor: default;
+  }
+  .primary-red--disabled:hover,
+  .primary-red--disabled:active {
+    background-color: var(--primary-red-inactive);
+    color: var(--primary-red-text-inactive);
+  }
+
+  .primary-green--disabled {
+    background-color: var(--primary-green-inactive);
+    color: var(--primary-green-text-inactive);
+    pointer-events: none;
+    user-select: none;
+    cursor: default;
+  }
+  .primary-green--disabled:hover,
+  .primary-green--disabled:active {
+    background-color: var(--primary-green-inactive);
+    color: var(--primary-green-text-inactive);
+  }
+
+  .primary-violet--disabled {
+    background-color: var(--primary-violet-inactive);
+    color: var(--primary-violet-text-inactive);
+    pointer-events: none;
+    user-select: none;
+    cursor: default;
+  }
+  .primary-violet--disabled:hover,
+  .primary-violet--disabled:active {
+    background-color: var(--primary-violet-inactive);
+    color: var(--primary-violet-text-inactive);
+  }
+
+  .primary-blue--disabled {
+    background-color: var(--primary-blue-inactive);
+    color: var(--primary-blue-text-inactive);
+    pointer-events: none;
+    user-select: none;
+    cursor: default;
+  }
+  .primary-blue--disabled:hover,
+  .primary-blue--disabled:active {
+    background-color: var(--primary-blue-inactive);
+    color: var(--primary-blue-text-inactive);
+  }
+
+  .secondary-red--disabled {
+    background-color: var(--secondary-red-inactive);
+    color: var(--secondary-red-text-inactive);
+    pointer-events: none;
+    user-select: none;
+    cursor: default;
+  }
+  .secondary-red--disabled:hover,
+  .secondary-red--disabled:active {
+    background-color: var(--secondary-red-inactive);
+    color: var(--secondary-red-text-inactive);
+  }
+
+  .secondary-green--disabled {
+    background-color: var(--secondary-green-inactive);
+    color: var(--secondary-green-text-inactive);
+    pointer-events: none;
+    user-select: none;
+    cursor: default;
+  }
+  .secondary-green--disabled:hover,
+  .secondary-green--disabled:active {
+    background-color: var(--secondary-green-inactive);
+    color: var(--secondary-green-text-inactive);
+  }
+
+  .secondary-violet--disabled {
+    background-color: var(--secondary-violet-inactive);
+    color: var(--secondary-violet-text-inactive);
+    pointer-events: none;
+    user-select: none;
+    cursor: default;
+  }
+  .secondary-violet--disabled:hover,
+  .secondary-violet--disabled:active {
+    background-color: var(--secondary-violet-inactive);
+    color: var(--secondary-violet-text-inactive);
+  }
+
   .secondary-blue--disabled {
     background-color: var(--secondary-blue-inactive);
     color: var(--secondary-blue-text-inactive);
+    pointer-events: none;
+    user-select: none;
+    cursor: default;
   }
-
+  .secondary-blue--disabled:hover,
+  .secondary-blue--disabled:active {
+    background-color: var(--secondary-blue-inactive);
+    color: var(--secondary-blue-text-inactive);
+  }
 }
 
