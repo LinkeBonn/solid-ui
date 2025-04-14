@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 
 import SDButton from '../components/SDButton.vue';
 import '../solid-ui.css';
+import {fn} from "@storybook/test";
 
 const meta = {
   title: 'Controls/SDButton',
@@ -11,13 +12,12 @@ const meta = {
     colorScheme: { control: 'select', options: ['red', 'green', 'violet', 'blue'] },
     mode: { control: 'select', options: ['primary', 'secondary'] },
     label: { control: 'text' },
-    href: { control: 'text' },
   },
   args: {
     mode: 'primary',
     colorScheme: 'red',
     label: 'Button',
-    href: '#',
+    onOnClick: fn(),
   },
 } satisfies Meta<typeof SDButton>;
 
