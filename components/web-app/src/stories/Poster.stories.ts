@@ -26,7 +26,7 @@ const Template = (args) => ({
     setup() {
         return { args };
     },
-    template: '<SDPoster v-bind="args"/>',
+    template: '<div style="max-width: 550px"><SDPoster v-bind="args"/></div>',
 });
 
 export const Default: Story = Template.bind({})

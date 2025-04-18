@@ -40,7 +40,6 @@ defineProps({
   align-items: start;
   justify-content: start;
   padding: 40px;
-  max-width: 780px;
   box-sizing: border-box;
 }
 

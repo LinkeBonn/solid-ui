@@ -25,7 +25,7 @@ const Template = (args) => ({
     setup() {
         return { args };
     },
-    template: '<SDCitation v-bind="args"/>',
+    template: '<div style="max-width: 550px"><SDCitation v-bind="args"/></div>',
 });
 
 export const Default: Story = Template.bind({})

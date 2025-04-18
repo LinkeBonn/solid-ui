@@ -30,7 +30,6 @@ defineProps({
 
 <style scoped>
 .sd-citation__wrapper {
-  max-width: 780px;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -57,7 +56,7 @@ defineProps({
 }
 
 .sd-citation__citation{
-  margin-top: 90px;
+  margin-top: 10%;
   width: 100%;
 }
 
