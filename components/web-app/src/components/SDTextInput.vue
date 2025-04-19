@@ -65,6 +65,5 @@ const onChange = (inputEvent: Event) => {
   justify-content: start;
   flex-direction: column;
   gap: 6px;
-  width: 100%;
 }
 </style>
