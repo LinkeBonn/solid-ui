@@ -83,6 +83,8 @@ const onTextAreaUpdate = (textAreaUpdate: string) => {
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2em;
 }
 
 .post-it-text-area {
