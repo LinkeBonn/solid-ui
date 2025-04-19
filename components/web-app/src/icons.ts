@@ -50,7 +50,8 @@ import {
     faExternalLinkAlt,
     faPaperclip,
     faImage,
-    faFile
+    faFile,
+    faChevronDown,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -103,7 +104,8 @@ library.add(
     faExternalLinkAlt,
     faPaperclip,
     faImage,
-    faFile
+    faFile,
+    faChevronDown,
 );
 
 export function setupFontAwesome(app: any) {

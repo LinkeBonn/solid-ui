@@ -1,6 +1,6 @@
 <template>
   <div class="input-box">
-    <label :style="`color: var(--${mode}-${colorScheme}-text); font-weight: bold`">{{ label }}:</label>
+    <label style="font-weight: bold">{{ label }}</label>
     <textarea
         class="linke-text-input"
         :class="
@@ -58,6 +58,9 @@ const onChange = (inputEvent: Event) => {
   min-width: 100px;
   outline: none;
   padding: 12px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .input-box {

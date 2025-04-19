@@ -58,7 +58,8 @@ const iconList = [
     'external-link-alt',
     'paperclip',
     'image',
-    'file'
+    'file',
+    'chevron-down',
 ];
 
 export const AllIcons = () =>
