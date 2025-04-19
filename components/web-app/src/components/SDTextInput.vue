@@ -1,6 +1,6 @@
 <template>
   <div class="input-box">
-    <label :style="`color: var(--${mode}-${colorScheme}-text); font-weight: bold`">{{ label }}</label>
+    <label style="font-weight: bold">{{ label }}</label>
     <input
         class="linke-text-input"
         type="text"
