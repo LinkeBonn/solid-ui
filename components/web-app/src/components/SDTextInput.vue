@@ -42,7 +42,8 @@ const textvalue = ref('')
 const emit = defineEmits(["onChange"])
 
 const onChange = (inputEvent: Event) => {
-  emit("onChange", inputEvent.target.value)
+  //@ts-ignore
+  emit("onChange", inputEvent.target?.value)
 }
 </script>
 
