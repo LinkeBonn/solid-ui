@@ -11,6 +11,7 @@
             ]"
         v-model="textvalue"
         @change="onChange"
+        :readonly="readonly"
     />
   </div>
 </template>
@@ -39,6 +40,10 @@ const props = defineProps({
   text: {
     type: String,
     default: ""
+  },
+  readonly: {
+    type: Boolean,
+    default: false
   }
 })
 
