@@ -19,7 +19,7 @@
 
 import {ref} from "vue";
 
-defineProps({
+const props = defineProps({
   label: {
     type: String,
     default: ""
@@ -36,9 +36,13 @@ defineProps({
     type: Boolean,
     default: false
   },
+  text: {
+    type: String,
+    default: ""
+  }
 })
 
-const textvalue = ref('')
+const textvalue = ref(props.text)
 const emit = defineEmits(["onChange"])
 
 const onChange = (inputEvent: Event) => {

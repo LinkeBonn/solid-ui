@@ -1,8 +1,8 @@
 <template>
   <div class="linke-post-it" :style="`background-color: var(--primary-${colorScheme}-full)`">
-    <SDTextArea class="post-it-text-area" :color-scheme="colorScheme" mode="primary" :label="textLabel" :disabled="!isEditable" @on-change="onTextAreaUpdate"/>
+    <SDTextArea class="post-it-text-area" :color-scheme="colorScheme" mode="primary" :label="textLabel" :disabled="!isEditable" @on-change="onTextAreaUpdate" :text="text"/>
     <div class="post-it-bottom">
-      <SDTextInput :color-scheme="colorScheme" mode="primary" :label="authorLabel" :disabled="!isEditable" @on-change="onAuthorChange"/>
+      <SDTextInput :color-scheme="colorScheme" mode="primary" :label="authorLabel" :disabled="!isEditable" @on-change="onAuthorChange" :text="author"/>
       <SDButton v-if="isEditable" :color-scheme="colorScheme" mode="primary" :label="buttonLabel" @onClick="onSubmit"/>
     </div>
   </div>
