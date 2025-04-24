@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import {ref, onMounted, nextTick} from 'vue'
+import {ref, onMounted, nextTick, PropType} from 'vue'
 
 const svgContent = ref(null)
 const svgRef = ref(null)
@@ -20,7 +20,7 @@ const emit = defineEmits(['onHover', 'onClick'])
 
 const props = defineProps({
   bezirkList: {
-    type: Object<BezirkList>,
+    type: Object as PropType<BezirkList>,
     default: null
   }
 })
