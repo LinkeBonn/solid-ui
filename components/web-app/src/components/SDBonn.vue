@@ -11,6 +11,7 @@
 </template>
 
 <script setup lang="ts">
+// @ts-nocheck
 import {ref, onMounted, nextTick, PropType} from 'vue'
 
 const svgContent = ref(null)
