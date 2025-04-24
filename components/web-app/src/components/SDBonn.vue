@@ -25,14 +25,14 @@ const props = defineProps({
   }
 })
 
-const enhanceElement = (el) => {
+const enhanceElement = (el: HTMLElement) => {
   el.style.cursor = 'pointer'
   el.style.transition = 'stroke-width 0.2s'
   el.style.stroke = 'black'
   el.style.strokeWidth = '1'
 }
 
-const onHover = (event) => {
+const onHover = (event: Event) => {
   const id = event.target?.id
   if (props.bezirkList[id]) {
     event.target.style.strokeWidth = '4'
@@ -40,14 +40,14 @@ const onHover = (event) => {
   }
 }
 
-const onMouseOut = (event) => {
+const onMouseOut = (event: Event) => {
   const id = event.target?.id
   if (props.bezirkList[id]) {
     event.target.style.strokeWidth = '1'
   }
 }
 
-const onClick = (event) => {
+const onClick = (event: Event) => {
   const id = event.target?.id
   if (props.bezirkList[id]) {
     emit('onClick', {id, ...props.bezirkList[id]})
