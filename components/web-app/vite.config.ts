@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import {resolve} from "path";
 import path from "path";
 import {viteStaticCopy} from "vite-plugin-static-copy";
+import svgLoader from 'vite-svg-loader'
 
 export default defineConfig({
     plugins: [
@@ -14,7 +15,8 @@ export default defineConfig({
                     dest: 'assets/fonts',
                 }
             ],
-        })
+        }),
+        svgLoader()
     ],
     resolve: {
         alias: {

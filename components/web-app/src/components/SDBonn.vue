@@ -13,6 +13,7 @@
 <script setup lang="ts">
 // @ts-nocheck
 import {ref, onMounted, nextTick} from 'vue'
+import wahlbezirkSVG from "@/assets/wahlbezirke.svg?raw"
 
 const svgContent = ref(null)
 const svgRef = ref(null)
@@ -89,9 +90,7 @@ const onClick = (event: Event) => {
 }
 
 onMounted(async () => {
-  const res = await fetch('/wahlbezirke.svg')
-  const text = await res.text()
-  svgContent.value = text
+  svgContent.value = wahlbezirkSVG
 
   await nextTick()
 
