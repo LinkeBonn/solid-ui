@@ -6,7 +6,6 @@ interface SelectOption {
 }
 
 interface Bezirk {
-    url: string;
     text: string;
 }
 
