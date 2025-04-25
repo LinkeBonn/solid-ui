@@ -6,6 +6,8 @@ import SDTextInput from "./components/SDTextInput.vue";
 import SDTextArea from "./components/SDTextArea.vue";
 import SDSelect from "./components/SDSelect.vue";
 import SDPostIt from "./components/SDPostIt.vue";
+import SDBonn from "./components/SDBonn.vue";
+import SDCandidate from "./components/SDCandidate.vue";
 import "./solid-ui.css";
 
-export {SDButton, SDPoster, SDBanner, SDCitation, SDTextInput, SDTextArea, SDSelect, SDPostIt}
+export {SDButton, SDPoster, SDBanner, SDCitation, SDTextInput, SDTextArea, SDSelect, SDPostIt, SDCandidate, SDBonn}
